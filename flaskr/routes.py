@@ -37,7 +37,7 @@ def upload_file():
             filename = secure_filename(file.filename)
             print(os.path.join(upload_folder, filename))
             file.save(os.path.join(upload_folder, filename))
-            return f"{request.host_url}uploads/{quote_plus(filename)}"
+            return f"{request.host_url}uploads/{quote_plus(filename)}"[:-1]
 
     else:
         return render_template("index.html")
