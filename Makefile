@@ -1,5 +1,13 @@
+comandos:
+	@echo ""
+	@echo "	COMANDOS"
+	@echo ""
+	@echo "	install"
+	@echo "	ejecutar"
+	@echo ""
+
 iniciar:
-	pipenv install
+	@pipenv install
 
 ejecutar:
-	pipenv run flask run
+	@pipenv run flask run
