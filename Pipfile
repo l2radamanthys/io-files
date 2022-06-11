@@ -8,6 +8,7 @@ flask = "*"
 python-dotenv = "*"
 black = "*"
 werkzeug = "*"
+gunicorn = "*"
 
 [dev-packages]
 
